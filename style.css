@@ -1,0 +1,209 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body{
+ 
+  background: linear-gradient(180deg,
+  rgb(101, 72, 152) 0%,
+  rgb(146, 125, 182) 32.2449%,
+  rgb(241, 238, 245) 100%) no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight : 400;
+  font-size: 1.6rem;
+  margin-left: 180px; margin-right: 180px;
+}
+
+main {
+  padding:6.4rem;
+} 
+
+nav {
+  margin-top: 6.4 rem;
+  display: flex;
+}
+
+nav .logo {
+ width: 3rem;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .nav-list {
+  align-items: center;
+  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+}
+
+.image-tafa img {
+  width: 100%;
+}
+
+nav .nav-list li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left:7rem;
+  font-size: 18px;
+}
+h1{
+  font-size:64px;
+  align-items: center;
+text-transform: capitalize; 
+}
+
+.centre {
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-between;
+}
+
+p{
+
+ align-items: center;
+ margin-top: 5rem;
+line-height:1.4;
+}
+.btn{
+  width:max-content;
+  height: max-content;
+  border-radius: 60px;
+  color: blueviolet;
+ background-color: white;
+  font-size: 6.7rem
+}
+.btn{
+  padding: 25px;;
+}
+
+.gauche{
+  width: 60%;
+  margin-top: 73px;
+}
+
+.droit span {
+  font-size: 270px;
+}
+
+.droit{
+   font-size: 18px; 
+  font-weight: 900;
+  align-items: center;
+  display: flex;
+}
+.center{
+  display: flex;
+}
+.btn2{
+margin-top: 55px;
+font-size: 18px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu .content {
+  opacity: 0; 
+  pointer-events: none;
+}
+
+@media screen and (max-width: 460px) {
+  
+  body {
+    margin: 0;
+  }
+
+  ul.nav-list {
+    display: none;
+  }
+
+  nav .logo img {
+    width: 70px;
+  }
+  
+
+  span.promotion {
+    font-size: 50px;
+  }
+
+  div.droit {
+    align-items: flex-start;
+  }
+
+  .gauche {
+    margin: 0;
+  }
+
+  main{
+    padding: 4%;
+    height: 100vh;
+  }
+
+  p {
+      margin-top: 10px;
+  }
+
+  .btn2 {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .image-tafa img {
+    margin-top: 5%;
+  }
+
+  #humburger{
+    display: block;
+    width: 40px
+  }
+
+  nav{
+    justify-content: space-between
+  }
+
+  ul.nav-list-mobile{
+    list-style: none;
+    background: white;
+    color: black;
+    width: 200px;
+    padding: 10px;
+    line-height: 2;
+    right: -35px;
+    position: absolute;
+    top: 0;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .content{
+    position: absolute;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .menu:hover .content {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+}
+
+
+
